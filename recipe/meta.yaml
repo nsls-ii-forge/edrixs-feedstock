@@ -17,7 +17,7 @@ build:
 requirements:
   build:
     - arpack-mpi
-    - libopenblas
+    - libcblas
     - openmpi
     - {{ compiler('fortran') }}
   host:
@@ -30,9 +30,10 @@ requirements:
     - matplotlib
     - mpi4py
     - nomkl
+    - numpy
+    - openblas
     - scipy
     - sympy
-    - {{ pin_compatible('numpy') }}
 
 test:
   imports:
