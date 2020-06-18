@@ -1,0 +1,46 @@
+{% set name = "edrixs" %}
+{% set version = "0.0.4" %}
+{% set sha256 = "4d2f0757406dd01197925586db6a9363e2f3945f208fae5dc98e947139d8df9e" %}
+
+package:
+  name: {{ name|lower }}
+  version: {{ version }}
+
+source:
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: {{ sha256 }}
+
+build:
+  number: 0
+  skip: true  # [not linux]
+
+requirements:
+  build:
+    - arpack-mpi
+    - openmpi
+    - {{ compiler('fortran') }}
+  host:
+    - python
+    - pip
+    - libopenblas
+    - numpy
+  run:
+    - python
+    - arpack-mpi
+    - matplotlib
+    - mpi4py
+    - nomkl
+    - openblas
+    - scipy
+    - sympy
+    - {{ pin_compatible('numpy') }}
+
+test:
+  imports:
+    - edrixs
+
+about:
+  home: https://github.com/NSLS-II/edrixs
+  license: BSD-3-Clause
+  license_file: LICENSE
+  summary: An open source toolkit for simulating RIXS spectra based on ED
