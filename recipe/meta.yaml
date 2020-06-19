@@ -1,6 +1,6 @@
 {% set name = "edrixs" %}
-{% set version = "0.0.4" %}
-{% set sha256 = "4d2f0757406dd01197925586db6a9363e2f3945f208fae5dc98e947139d8df9e" %}
+{% set version = "0.0.5" %}
+{% set sha256 = "42a764b750003b894c9a0537e8e88797b45ad3afdc6de75e6639408a33c7fbbe" %}
 
 package:
   name: {{ name|lower }}
