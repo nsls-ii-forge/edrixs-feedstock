@@ -5,7 +5,7 @@ Home: https://github.com/NSLS-II/edrixs
 
 Package license: BSD-3-Clause
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: An open source toolkit for simulating RIXS spectra based on ED
 
@@ -49,16 +49,31 @@ Current build status
                   <img src="https://dev.azure.com/nsls2forge/nsls2forge/_apis/build/status/edrixs-feedstock?branchName=master&jobName=linux&configuration=linux_python3.8" alt="variant">
                 </a>
               </td>
+            </tr><tr>
+              <td>osx_python3.6</td>
+              <td>
+                <a href="https://dev.azure.com/nsls2forge/nsls2forge/_build/latest?definitionId=172&branchName=master">
+                  <img src="https://dev.azure.com/nsls2forge/nsls2forge/_apis/build/status/edrixs-feedstock?branchName=master&jobName=osx&configuration=osx_python3.6" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_python3.7</td>
+              <td>
+                <a href="https://dev.azure.com/nsls2forge/nsls2forge/_build/latest?definitionId=172&branchName=master">
+                  <img src="https://dev.azure.com/nsls2forge/nsls2forge/_apis/build/status/edrixs-feedstock?branchName=master&jobName=osx&configuration=osx_python3.7" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_python3.8</td>
+              <td>
+                <a href="https://dev.azure.com/nsls2forge/nsls2forge/_build/latest?definitionId=172&branchName=master">
+                  <img src="https://dev.azure.com/nsls2forge/nsls2forge/_apis/build/status/edrixs-feedstock?branchName=master&jobName=osx&configuration=osx_python3.8" alt="variant">
+                </a>
+              </td>
             </tr>
           </tbody>
         </table>
       </details>
-    </td>
-  </tr>
-  <tr>
-    <td>OSX</td>
-    <td>
-      <img src="https://img.shields.io/badge/OSX-disabled-lightgrey.svg" alt="OSX disabled">
     </td>
   </tr>
   <tr>
