@@ -1,6 +1,6 @@
 {% set name = "edrixs" %}
-{% set version = "0.0.5" %}
-{% set sha256 = "42a764b750003b894c9a0537e8e88797b45ad3afdc6de75e6639408a33c7fbbe" %}
+{% set version = "0.0.6" %}
+{% set sha256 = "87f7a8a414fa733f27b1f728df268aad27402dc8e8a45b4d5bf5e4f7f1d5170e" %}
 
 package:
   name: {{ name|lower }}
@@ -11,7 +11,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 2
+  number: 0
   skip: true  # [not linux]
 
 requirements:
