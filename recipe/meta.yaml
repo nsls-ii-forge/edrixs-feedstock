@@ -35,12 +35,12 @@ requirements:
     - sympy
 
 test:
-  source:
-    - recipe/example_2_AIM_XAS.py
+  files:
+    - example_2_AIM_XAS.py
   imports:
     - edrixs
   commands:
-    - python recipe/example_2_AIM_XAS.py
+    - python example_2_AIM_XAS.py
 
 about:
   home: https://github.com/NSLS-II/edrixs
