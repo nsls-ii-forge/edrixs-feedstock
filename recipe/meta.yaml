@@ -11,7 +11,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
   skip: true  # [not linux]
 
 requirements:
@@ -30,12 +30,18 @@ requirements:
     - matplotlib
     - mpi4py
     - numpy
+    - openblas
     - scipy
     - sympy
 
 test:
+  files:
+    - example_2_AIM_XAS.py
   imports:
     - edrixs
+  commands:
+    - python example_2_AIM_XAS.py
+    - mpiexec -n 2 python example_2_AIM_XAS.py
 
 about:
   home: https://github.com/NSLS-II/edrixs
