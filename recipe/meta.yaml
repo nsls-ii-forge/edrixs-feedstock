@@ -30,7 +30,7 @@ requirements:
     - matplotlib
     - mpi4py
     - numpy
-    # - openblas
+    - openblas
     - scipy
     - sympy
 
@@ -41,6 +41,7 @@ test:
     - edrixs
   commands:
     - python example_2_AIM_XAS.py
+    - mpi4py -n 2 python example_2_AIM_XAS.py
 
 about:
   home: https://github.com/NSLS-II/edrixs
