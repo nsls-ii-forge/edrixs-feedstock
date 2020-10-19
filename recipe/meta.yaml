@@ -1,6 +1,6 @@
 {% set name = "edrixs" %}
-{% set version = "0.0.5" %}
-{% set sha256 = "42a764b750003b894c9a0537e8e88797b45ad3afdc6de75e6639408a33c7fbbe" %}
+{% set version = "0.0.7" %}
+{% set sha256 = "fce7c1543d61df156696533dd7abcb7782e410bfb91afe7ae77109735146d160" %}
 
 package:
   name: {{ name|lower }}
@@ -13,6 +13,7 @@ source:
 build:
   number: 2
   skip: true  # [win]
+
 
 requirements:
   build:
@@ -30,12 +31,18 @@ requirements:
     - matplotlib
     - mpi4py
     - numpy
+    - openblas
     - scipy
     - sympy
 
 test:
+  files:
+    - example_2_AIM_XAS.py
   imports:
     - edrixs
+  commands:
+    - python example_2_AIM_XAS.py
+    - mpiexec -n 2 python example_2_AIM_XAS.py
 
 about:
   home: https://github.com/NSLS-II/edrixs
