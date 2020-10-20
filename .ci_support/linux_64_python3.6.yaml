@@ -1,0 +1,29 @@
+cdt_name:
+- cos6
+channel_sources:
+- nsls2forge,defaults
+channel_targets:
+- nsls2forge main
+docker_image:
+- nsls2/nsls2forge:latest
+fortran_compiler:
+- gfortran
+fortran_compiler_version:
+- '7'
+numpy:
+- '1.16'
+openmpi:
+- '4.0'
+pin_run_as_build:
+  python:
+    min_pin: x.x
+    max_pin: x.x
+python:
+- '3.6'
+target_platform:
+- linux-64
+zip_keys:
+- - cdt_name
+  - docker_image
+- - python
+  - numpy
