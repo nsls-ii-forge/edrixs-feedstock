@@ -11,8 +11,9 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
-  skip: true  # [not linux]
+  number: 2
+  skip: true  # [win]
+
 
 requirements:
   build:
