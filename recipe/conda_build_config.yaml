@@ -1,5 +1,5 @@
 channel_sources:
-  - nsls2forge,defaults
+  - conda-forge,nsls2forge
 channel_targets:
   - nsls2forge main
 cdt_name:
@@ -11,8 +11,8 @@ cxx_compiler_version:  # [linux]
 fortran_compiler_version:  # [unix]
   - 7.3                    # [linux]
   - 4                      # [osx and x86_64]
-docker_image:
-  - quay.io/condaforge/linux-anvil-comp7
+# docker_image:
+#   - quay.io/condaforge/linux-anvil-comp7
 numpy:
   - 1.16
   - 1.16

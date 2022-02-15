@@ -1,11 +1,11 @@
 cdt_name:
 - cos6
 channel_sources:
-- nsls2forge,defaults
+- conda-forge,nsls2forge
 channel_targets:
 - nsls2forge main
 docker_image:
-- quay.io/condaforge/linux-anvil-comp7
+- quay.io/condaforge/linux-anvil-cos7-x86_64
 fortran_compiler:
 - gfortran
 fortran_compiler_version:
