@@ -18,6 +18,7 @@ requirements:
   build:
     - arpack-mpi
     - libopenblas
+    - make
     - openmpi
     - {{ compiler('fortran') }}
   host:
